@@ -1,10 +1,8 @@
-# Créer le fichier .gitignore
-cat > .gitignore << 'EOF'
 # Dependencies
 node_modules/
 .pnpm-store/
 
-# Environment variables (IMPORTANT: ne jamais commiter les secrets)
+# Environment variables
 .env
 .env.local
 .env.production
@@ -36,10 +34,3 @@ Thumbs.db
 # Temporary files
 tmp/
 temp/
-EOF
-
-# Ajouter le .gitignore au commit
-git add .gitignore
-git commit -m "Add .gitignore to protect sensitive files"
-git push
-
