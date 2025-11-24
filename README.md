@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # 🎯 Maiden Task Manager
 
 Application moderne de gestion de tâches avec gamification et analytics de productivité.
@@ -21,16 +20,19 @@ Application moderne de gestion de tâches avec gamification et analytics de prod
 
 ## 📦 Installation
 
-\`\`\`bash
+```bash
 # Installer les dépendances
 pnpm install
 
-# Configurer la base de données
-pnpm db:push
-
-# Lancer le serveur de développement
+# Lancer le serveur de développement (API + Vite)
 pnpm dev
-\`\`\`
+
+# Construire l'application
+pnpm build
+
+# Démarrer en production (après build)
+pnpm start
+```
 
 ## 📖 Documentation
 
@@ -43,8 +45,3 @@ Voir [LOGO_PROMPT.md](./LOGO_PROMPT.md) pour générer le logo de l'application.
 ## 📝 Licence
 
 Développé avec ❤️ sur la plateforme Manus
-EOF
-
-git add README.md
-git commit -m "Add comprehensive README"
-git push
