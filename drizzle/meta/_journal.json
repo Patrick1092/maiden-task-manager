@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1763977962869,
+      "tag": "0000_watery_wallow",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1763978017714,
+      "tag": "0001_yummy_squadron_supreme",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1764081371261,
+      "tag": "0002_clammy_namorita",
+      "breakpoints": true
+    }
+  ]
+}
