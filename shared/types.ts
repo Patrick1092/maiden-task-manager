@@ -1,19 +1,7 @@
-export type Priority = "high" | "medium" | "low";
+/**
+ * Unified type exports
+ * Import shared types from this single entry point.
+ */
 
-export interface Task {
-  id: string;
-  title: string;
-  description?: string;
-  dueDate?: string | null;
-  priority: Priority;
-  completed: boolean;
-  createdAt: string;
-  completedAt?: string | null;
-}
-
-export interface AnalyticsSnapshot {
-  total: number;
-  completed: number;
-  urgentActive: number;
-  productivityScore: number;
-}
+export type * from "../drizzle/schema";
+export * from "./_core/errors";
